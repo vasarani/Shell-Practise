@@ -4,5 +4,5 @@ set -e
 
 echo "Hello World!"
 echo "I'm Learning Shell_Scripting"
-echo "Printing Error here"
+echoo "Printing Error here"
 echo "No error in this"
