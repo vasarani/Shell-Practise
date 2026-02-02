@@ -20,9 +20,9 @@ VALIDATE(){
     fi  
 }
  
- for package in $@ 
+ for package in $@ #sudo sh 5feb_p.sh nginx mysql nodejs 
  do
-  dnf install $package -y #sudo sh 5feb_p.sh nginx mysql nodejs 
+  dnf install $package -y &>>$LOGS_FILE
   VALIDATE $? "$package installation"
  done
 
