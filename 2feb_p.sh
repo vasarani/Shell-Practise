@@ -14,7 +14,7 @@ VALIDATE(){
     fi  
 }
 echo "Installing Nginx"
-dnf install nginx -y
+dnf install nginxfg -y
 VALIDATE $? "Nginx Installation"
 
 echo "Installing MySQL"
