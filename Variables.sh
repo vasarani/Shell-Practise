@@ -1,5 +1,5 @@
 #!/bin/bash
-Person1=Akhi
+Person1=Akhi # No Space between Value and =
 Person2=Siva
 
 echo "$Person1: Hi $Person2, How are you?"

@@ -5,8 +5,10 @@ if [$USERID -ne 0]; then
  echo "Please run this script with root user access"
  exit 1
 fi 
- echo "Installing Nginx"
- dnf install nginx -y
+ #by default shell will not execute, only executed when we called
+ 
+
+dnf install nginx -y
 
 if [ $? -ne 0 ]; then 
  echo "Installing Nginx... FAILURE"
@@ -33,4 +35,3 @@ else
  echo  "Installing Nodejs.... SUCCESS"
 fi
 
-  
